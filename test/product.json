@@ -1,0 +1,294 @@
+{
+    "description": "【新】投保流程-测算详情",
+    "id": "957794417436082176",
+    "title": "产品详情页",
+    "widgets": [
+        {
+            "components": [
+                {
+                    "highlight": "",
+                    "visible": true,
+                    "flag": "1",
+                    "waitDays": "0",
+                    "format": "img",
+                    "id": "detailsBanner-v2",
+                    "title": "",
+                    "type": "string",
+                    "returned": false,
+                    "insuredRuleDate": "1",
+                    "url": ""
+                }
+            ],
+            "id": "basicWidget-v2",
+            "title": "基本信息微件"
+        },
+        {
+            "components": [
+                {
+                    "description": "理赔服务",
+                    "id": "claimServiceUrl-v2",
+                    "title": "理赔服务",
+                    "value": ""
+                },
+                {
+                    "lpxz": "出险后服务专员将全程提供协助，享保险公司专属绿色通道，贴心100分。",
+                    "dzbd": "投保成功后，电子保单直接发送至您的邮箱，舒心100分。",
+                    "id": "companyProfile-v2",
+                    "title": "公司简介",
+                    "value": "长生人寿保险有限公司（英文名：GREAT WALL CHANGSHENG LIFE INSURANCE CO., LTD. 原名：广电日生人寿保险有限公司）成立于2003年9月，是中国首家获准开业的中日合资寿险公司。公司由中国长城资产管理股份有限公司、日本生命保险相互会社和长城国富置业有限公司共同合资经营，2015年7月经中国保监会批准，公司注册资本金增至21.67亿元人民币（中国长城资产持股51%，日本生命持股30%，长城国富持股19%）。目前公司已在上海、浙江、江苏、北京、四川、山东等地区开展各类个人和团体保险业务。随着业务的发展和营业区域的扩大，公司正加快向全国性经营的寿险公司迈进。\n长生人寿时刻以“成为市场上最受客户信赖的寿险公司”为发展目标。针对顾客在人生中有可能遭遇到的风险，向顾客充分说明本公司所提供的保险产品及相关服务，并为顾客提供量体裁衣式的最佳保险解决方案和服务。为了确保能向每一位顾客就我公司提供的保险产品进行充分的解释和说明，从而提高顾客的满意度，长生人寿建立了一套完善而独特的营销员教育体系。同时，公司高度尊重顾客隐私，在提供各类保险服务的过程中将严格管理顾客信息，确保顾客信息的安全。",
+                    "bdyz": "该保单支持保险公司官网验证，放心100分。"
+                },
+                {
+                    "description": "常见问题",
+                    "id": "FAQUrl-v2",
+                    "title": "常见问题",
+                    "value": ""
+                },
+                {
+                    "description": "投保须知",
+                    "id": "insuranceInstructionUrl-v2",
+                    "title": "投保须知",
+                    "value": "",
+                    "option": [
+                        {
+                            "label": "",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "visible": true,
+                    "description": "产品特色",
+                    "id": "productCharacterizeUrl-v2",
+                    "title": "产品特色",
+                    "returned": false,
+                    "url": ""
+                }
+            ],
+            "id": "productContentWidget-v2",
+            "title": "产品特色微件"
+        },
+        {
+            "components": [
+                {
+                    "visible": false,
+                    "description": "为您推荐长生福寿长终身寿险，详情请点击！",
+                    "id": "weixinShare-v2",
+                    "title": "利益锁定，高额现价；基本保险金额3.5%递增！",
+                    "returned": false,
+                    "url": "https://shop.zhongbaounion.com/pic/wechatShare/1087163914752942080.jpg"
+                }
+            ],
+            "id": "weixinShareWidget-v2",
+            "title": "微信分享微件-v2"
+        },
+        {
+            "components": [
+                {
+                    "premium": [
+                        {
+                            "label": "计划一",
+                            "value": "500.00"
+                        }
+                    ],
+                    "id": "footer_calculator-v2",
+                    "title": "保费测算"
+                },
+                {
+                    "default": "500.00",
+                    "visible": true,
+                    "description": "立即投保按钮",
+                    "id": "insureButton-v2",
+                    "title": "立即投保",
+                    "type": "string",
+                    "returned": false
+                }
+            ],
+            "id": "detailsFooterWidget-v2",
+            "title": "页尾微件"
+        },
+        {
+            "components": [
+                {
+                    "options": [
+                        {
+                            "default": "1366206650979311616",
+                            "dutyList": [
+                                {
+                                    "dutyPremium": "",
+                                    "dutyAmountDesc": "按合同约定",
+                                    "description": "一、被保险人在年满18周岁的首个保险单周年日零时之前身故或身体高度残疾，按以下二者的较大者给付，合同终止：   1. 被保险人身故或身体高度残疾时的累计已交保险费 (无息)；   2. 被保险人身故或身体高度残疾时的保险单年度末现金价值。 二、被保险人在年满18周岁的首个保险单周年日零时之后身故或身体高度残疾，按以下方式给付，合同终止： 1. 若被保险人在交费期满日24时之前身故或身体高度残疾，按以下二者的较大者给，合同终止：   （1） 被保险人身故或身体高度残疾时的累计已交保险费（无息）乘以所对应的给付比例；   （2） 被保险人身故或身体高度残疾时的保险单年度末现金价值。   2. 若被保险人在交费期满日24时之后身故或身体高度残疾，按以下三者的较大者给付，合同终止：   （1） 被保险人身故或身体高度残疾时的累计已交保险费（无息）乘以所对应的给付比例；   （2） 被保险人身故或身体高度残疾时的保险单年度末现金价值；  （3） 被保险人身故或身体高度残疾时的基本保险金额×（1+3.5%）^(n-1)，其中，n 为保险事故发生时的保险单年度数 。  身故或身体高度残疾时被保险人到达年龄： 18-60周岁：160%； 61周岁及以上：120%  。",
+                                    "dutyId": "",
+                                    "dutyAmount": "",
+                                    "dutyName": "身故或身体高度残疾保险金"
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "skuList-v2",
+                    "title": "责任列表组件",
+                    "type": "object",
+                    "returned": true
+                },
+                {
+                    "id": "insuredAgeRange-v2",
+                    "title": "投保年龄",
+                    "visible": false,
+                    "type": "string",
+                    "returned": false,
+                    "value": "30天-65周岁"
+                },
+                {
+                    "id": "insuredRelation-v2",
+                    "title": "为谁投保",
+                    "heightFlag": "1",
+                    "tips": "请选择与投保人关系",
+                    "description": "被保险人与投保人的关系",
+                    "format": "select",
+                    "visible": true,
+                    "type": "string",
+                    "returned": true,
+                    "options": [
+                        {
+                            "value": "1",
+                            "label": "本人"
+                        },
+                        {
+                            "value": "2",
+                            "label": "配偶"
+                        },
+                        {
+                            "value": "11",
+                            "label": "父母"
+                        },
+                        {
+                            "value": "12",
+                            "label": "子女"
+                        }
+                    ]
+                },
+                {
+                    "id": "insuredBirthday-v2",
+                    "title": "出生日期",
+                    "isCalculator": true,
+                    "format": "date",
+                    "visible": true,
+                    "type": "string",
+                    "returned": true,
+                    "tips": "请选择",
+                    "minimum": "18",
+                    "maximum": "65",
+                    "extraMsg": "保费会随着投/被保人年龄的不同，而产生变化"
+                },
+                {
+                    "id": "insuredGender-v2",
+                    "title": "性别",
+                    "isCalculator": true,
+                    "tips": "请选择",
+                    "description": "被保险人性别",
+                    "format": "select",
+                    "visible": true,
+                    "type": "string",
+                    "returned": true,
+                    "options": [
+                        {
+                            "label": "男",
+                            "value": "1"
+                        },
+                        {
+                            "label": "女",
+                            "value": "2"
+                        }
+                    ]
+                },
+                {
+                    "id": "insPeriod-v2",
+                    "title": "保障期限",
+                    "format": "",
+                    "visible": true,
+                    "type": "string",
+                    "returned": true,
+                    "options": [
+                        {
+                            "label": "终身",
+                            "value": "O"
+                        }
+                    ]
+                },
+                {
+                    "id": "payPeriod-v2",
+                    "titleChange": "true",
+                    "title": "缴费年期",
+                    "visible": true,
+                    "type": "string",
+                    "returned": true,
+                    "options": [
+                        {
+                            "label": "一次性缴纳",
+                            "value": "SP"
+                        },
+                        {
+                            "label": "3年交",
+                            "value": "Y3"
+                        },
+                        {
+                            "label": "5年交",
+                            "value": "Y5"
+                        },
+                        {
+                            "label": "10年交",
+                            "value": "Y10"
+                        },
+                        {
+                            "label": "15年交",
+                            "value": "Y15"
+                        },
+                        {
+                            "label": "20年交",
+                            "value": "Y20"
+                        }
+                    ]
+                },
+                {
+                    "id": "premium-v2",
+                    "title": "保费",
+                    "type": "input",
+                    "returned": true,
+                    "default": "5000",
+                    "visible": true,
+                    "addTimes": "1000",
+                    "tips": "",
+                    "unit": "元",
+                    "minNum": "1000",
+                    "dataCheck": true,
+                    "maxNum": "8000000",
+                    "options": []
+                },
+                {
+                    "id": "basicAmount-v2",
+                    "title": "基本保额",
+                    "value": "0",
+                    "returned": true,
+                    "visible": true
+                },
+                {
+                    "id": "calinsuredProfessionId-v2",
+                    "title": "标准类",
+                    "tips": "请选择",
+                    "isCalculator": true,
+                    "description": "",
+                    "visible": true,
+                    "type": "string",
+                    "returned": false,
+                    "value": "1",
+                    "holderProfessionLevel": "auto",
+                    "warning": [
+                        "特别提示，请如实选择一级、二级职业类别，避免理赔争议！"
+                    ]
+                }
+            ],
+            "id": "calculatorWidget-v2",
+            "title": "保费测算微件-v2"
+        }
+    ]
+}
