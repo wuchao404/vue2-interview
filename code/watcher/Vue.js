@@ -13,7 +13,6 @@ const Vue_ = function(props){
  */
 Vue_.prototype.depen = function(watch){
     for (var key in watch) {
-        console.log('key=',key)
         this.observer(this._id).subscribe(key, watch[key])
     }
 }
@@ -121,6 +120,7 @@ const vm1 = new Vue_({
     },
     watch:{
         "menu.home":function (newv, oldv) {
+            console.log(this.data)
             console.log(`newv=${newv},oldv=${oldv}`)
         },
         "menu.mine": function (newv, oldv) {

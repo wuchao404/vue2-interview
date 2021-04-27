@@ -7,11 +7,16 @@
       <p>{{menu.mine}}</p>
     </div>
     <button @click="changeMenu">修改菜单</button>
+    <computed />
   </div>
 </template>
 
 <script>
+import computed from './Computed.vue'
 export default {
+  components:{
+    computed,
+  },
   props: {
     msg: String
   },

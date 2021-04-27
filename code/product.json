@@ -1,548 +1,149 @@
 {
-    "description": "【新】投保流程-个人信息",
-    "id": "957794417465442304",
-    "title": "个人信息页面",
+    "description": "【新】投保流程-测算详情",
+    "id": "957794417436082176",
+    "title": "产品详情页",
     "widgets": [
         {
             "components": [
                 {
+                    "highlight": "",
                     "visible": true,
-                    "description": "投保人姓名",
-                    "id": "holderName-v2",
-                    "title": "姓名",
-                    "type": "string",
-                    "returned": true,
-                    "tips": "请输入投保人姓名"
-                },
-                {
-                    "visible": true,
-                    "expireDateId": "1",
-                    "format": "select",
-                    "options": [
-                        {
-                            "label": "身份证",
-                            "value": "1"
-                        },
-                        {
-                            "label": "护照 ",
-                            "value": "2"
-                        },
-                        {
-                            "label": "军官证 ",
-                            "value": "5"
-                        },
-                        {
-                            "label": "户口簿 ",
-                            "value": "6"
-                        },
-                        {
-                            "label": "出生证明",
-                            "value": "8"
-                        }
-                    ],
-                    "description": "投保人证件类型 ",
-                    "id": "holderCardType-v2",
-                    "title": "证件类型",
-                    "type": "string ",
-                    "returned": true,
-                    "tips": "请选择"
-                },
-                {
-                    "isCalculator": true,
-                    "visible": true,
+                    "flag": "1",
                     "waitDays": "0",
-                    "description": "投保人证件号码",
-                    "maximum": "Y80",
-                    "rule": "0",
-                    "id": "holderCardNo-v2",
-                    "title": "证件号码",
+                    "format": "img",
+                    "id": "detailsBanner-v2",
+                    "title": "",
                     "type": "string",
-                    "returned": true,
-                    "minimum": "Y18",
-                    "tips": "请输入投保人证件号码"
-                },
-                {
-                    "visible": true,
-                    "format": "select",
-                    "description": "投保人证件有效期",
-                    "id": "holderIdExpireDate-v2",
-                    "title": "证件有效期",
-                    "type": "string",
-                    "returned": true
-                },
-                {
-                    "visible": true,
-                    "description": "投保人手机号码",
-                    "id": "holderMobile-v2",
-                    "title": "电话号码",
-                    "type": "string",
-                    "returned": true,
-                    "tips": "请输入投保人手机号码"
-                },
-                {
-                    "visible": true,
-                    "description": "投保人电子邮箱",
-                    "id": "holderEmail",
-                    "title": "电子邮箱",
-                    "type": "string",
-                    "returned": true,
-                    "tips": "邮箱用于接收电子保单"
-                },
-                {
-                    "visible": true,
-                    "description": "国籍",
-                    "id": "holderHomeland-v2",
-                    "title": "国籍",
-                    "type": "string",
-                    "returned": true,
-                    "tips": "请选择投保人国籍"
-                },
-                {
-                    "isCalculator": true,
-                    "visible": true,
-                    "description": "投保人所在地区",
-                    "id": "holderArea-v2",
-                    "title": "所在地区",
-                    "type": "string",
-                    "returned": true,
-                    "tips": "请选择"
-                },
-                {
-                    "visible": true,
-                    "description": "投保人邮政编码",
-                    "id": "holderPostCode-v2",
-                    "title": "邮政编码",
-                    "type": "string",
-                    "returned": true,
-                    "tips": "请输入投保人邮政编码"
-                },
-                {
-                    "visible": true,
-                    "description": "投保人职业类别",
-                    "id": "holderProfessionId-v2",
-                    "title": "职业类别",
-                    "type": "string",
-                    "returned": true,
-                    "tips": "请选择",
-                    "checkFlag": false
-                }
-            ],
-            "id": "holderInfoWidget-v2",
-            "title": "投保人信息"
-        },
-        {
-            "components": [
-                {
-                    "visible": true,
-                    "format": "select",
-                    "options": [
-                        {
-                            "label": "本人",
-                            "value": "1"
-                        },
-                        {
-                            "label": "配偶",
-                            "value": "2"
-                        },
-                        {
-                            "label": "父母",
-                            "value": "11"
-                        },
-                        {
-                            "label": "子女",
-                            "value": "12"
-                        }
-                    ],
-                    "description": "被保险人与投保人的关系",
-                    "id": "insuredRelation-v2",
-                    "title": "为谁投保",
-                    "heightFlag": "1",
-                    "type": "string",
-                    "returned": true,
-                    "tips": "请选择与投保人关系"
-                },
-                {
-                    "visible": true,
-                    "format": "select",
-                    "description": "被保险人证件有效期",
-                    "id": "insuredIdExpireDate-v2",
-                    "title": "证件有效期",
-                    "type": "string",
-                    "returned": true
-                },
-                {
-                    "visible": true,
-                    "description": "被保险人手机号码",
-                    "id": "insuredMobile-v2",
-                    "title": "电话号码",
-                    "type": "string",
-                    "returned": true,
-                    "tips": "请输入被保险人手机号码"
-                },
-                {
-                    "visible": true,
-                    "description": "被保险人电子邮箱",
-                    "id": "insuredEmail-v2",
-                    "title": "电子邮箱",
-                    "type": "string",
-                    "returned": true,
-                    "tips": "邮箱用于接收电子保单"
-                },
-                {
-                    "visible": true,
-                    "description": "被保险人国籍",
-                    "id": "insuredhomeland-v2",
-                    "title": "国籍",
-                    "type": "string",
-                    "returned": true,
-                    "tips": "请选择被保人国籍"
-                },
-                {
-                    "visible": true,
-                    "description": "被保险人所在地区",
-                    "id": "insuredArea-v2",
-                    "title": "所在地区",
-                    "type": "string",
-                    "returned": true,
-                    "tips": "请选择"
-                },
-                {
-                    "visible": true,
-                    "description": "被保险人邮政编码",
-                    "id": "insuredPostCode-v2",
-                    "title": "邮政编码",
-                    "type": "string",
-                    "returned": true,
-                    "tips": "请输入被保险人邮政编码"
-                },
-                {
-                    "visible": true,
-                    "description": "标准类",
-                    "warning": [
-                        "特别提示，请如实选择一级、二级职业类别，避免理赔争议！"
-                    ],
-                    "id": "insuredProfessionId-v2",
-                    "title": "标准类",
-                    "type": "string",
-                    "returned": true,
-                    "tips": "1",
-                    "checkFlag": false
-                }
-            ],
-            "id": "insuredInfoWidget-v2",
-            "title": "被保险人信息"
-        },
-        {
-            "components": [
-                {
-                    "visible": true,
-                    "bank_type": "0",
-                    "options": [
-                        {
-                            "label": "工商银行",
-                            "value": "01"
-                        },
-                        {
-                            "label": "农业银行",
-                            "value": "02"
-                        },
-                        {
-                            "label": "中国银行",
-                            "value": "03"
-                        },
-                        {
-                            "label": "建设银行",
-                            "value": "04"
-                        },
-                        {
-                            "label": "交通银行",
-                            "value": "05"
-                        },
-                        {
-                            "label": "光大银行",
-                            "value": "06"
-                        },
-                        {
-                            "label": "招商银行",
-                            "value": "07"
-                        },
-                        {
-                            "label": "邮政储蓄",
-                            "value": "09"
-                        },
-                        {
-                            "label": "浦发银行",
-                            "value": "10"
-                        },
-                        {
-                            "label": "中信银行",
-                            "value": "12"
-                        },
-                        {
-                            "label": "平安银行",
-                            "value": "13"
-                        },
-                        {
-                            "label": "广发银行",
-                            "value": "14"
-                        },
-                        {
-                            "label": "兴业银行",
-                            "value": "17"
-                        }
-                    ],
-                    "description": "开户银行",
-                    "id": "payerBankId-v2",
-                    "title": "开户银行",
-                    "type": "input",
-                    "returned": true,
-                    "tips": "请选择"
-                },
-                {
-                    "visible": true,
-                    "description": "账户开户名",
-                    "id": "payerName-v2",
-                    "title": "账户开户名",
-                    "type": "input",
-                    "returned": true,
-                    "tips": "默认为投保人姓名"
-                },
-                {
-                    "visible": true,
-                    "description": "银行卡卡号",
-                    "cardQuata": [
-                        {
-                            "dayLimit": "",
-                            "totalLimit": "",
-                            "name": "",
-                            "remark": "",
-                            "type": ""
-                        }
-                    ],
-                    "id": "payerAccount-v2",
-                    "title": "银行卡号",
-                    "type": "input",
-                    "returned": true,
-                    "tips": "请输入银行卡号"
-                }
-            ],
-            "id": "payRenewalWidget-v2",
-            "title": "续期账户信息"
-        },
-        {
-            "components": [
-                {
-                    "number": "3",
-                    "visible": true,
-                    "options": [
-                        {
-                            "label": "法定受益人",
-                            "value": "1"
-                        },
-                        {
-                            "label": "指定受益人",
-                            "value": "0"
-                        }
-                    ],
-                    "description": "法定继承人范围是：第一顺序继承人为配偶、子女、父母；第二顺序继承人为兄弟姐妹、祖父母、外祖父母",
-                    "id": "isLegal-v2",
-                    "title": "受益人",
-                    "type": "string",
-                    "returned": true,
-                    "tips": "请选择受益人和被保人关系"
-                },
-                {
-                    "id": "benefitRelation-v2",
-                    "title": "与被保人关系",
-                    "tips": "请选择",
-                    "options": [
-                        {
-                            "label": "子女",
-                            "value": "12"
-                        }
-                    ],
-                    "returned": true,
-                    "visible": true
-                },
-                {
-                    "id": "benefitName-v2",
-                    "title": "姓名",
-                    "tips": "请输入受益人姓名",
-                    "description": "受益人姓名",
-                    "visible": true,
-                    "type": "string",
-                    "returned": true
-                },
-                {
-                    "id": "benefitCardType-v2",
-                    "expireDateId": "1",
-                    "title": "证件类型",
-                    "tips": "请选择受益人证件类型",
-                    "description": "受益人证件类型",
-                    "format": "select",
-                    "visible": true,
-                    "type": "string",
-                    "returned": true,
-                    "options": [
-                        {
-                            "label": "身份证",
-                            "value": "1"
-                        },
-                        {
-                            "label": "护照",
-                            "value": "2"
-                        },
-                        {
-                            "label": "军官证",
-                            "value": "3"
-                        },
-                        {
-                            "label": "港台同胞证",
-                            "value": "5"
-                        },
-                        {
-                            "label": "出生日期",
-                            "value": "6"
-                        }
-                    ]
-                },
-                {
-                    "id": "benefitCardNo-v2",
-                    "title": "证件号码",
-                    "tips": "请输入受益人证件号码",
-                    "description": "受益人证件号码",
-                    "visible": true,
-                    "type": "string",
-                    "returned": true
-                },
-                {
-                    "id": "benefitBirthday-v2",
-                    "title": "出生日期",
-                    "tips": "请选择受益人出生日期",
-                    "description": "受益人出生日期",
-                    "format": "date",
-                    "visible": true,
-                    "type": "string",
-                    "returned": true
-                },
-                {
-                    "id": "benefitGender-v2",
-                    "title": "性别",
-                    "tips": "请输入受益人性别",
-                    "description": "受益人性别",
-                    "format": "select",
-                    "visible": true,
-                    "type": "string",
-                    "returned": true,
-                    "options": [
-                        {
-                            "label": "男",
-                            "value": "1"
-                        },
-                        {
-                            "label": "女",
-                            "value": "2"
-                        }
-                    ]
-                },
-                {
-                    "id": "benefitIdExpireDate-v2",
-                    "title": "受益人证件有效期",
-                    "tips": "请选择受益人证件有效期",
-                    "description": "受益人证件有效期",
-                    "format": "select",
-                    "visible": true,
-                    "type": "string",
-                    "returned": true,
-                    "options": [
-                        {
-                            "lable": "短期",
-                            "value": "01"
-                        },
-                        {
-                            "lable": "长期",
-                            "value": "02"
-                        }
-                    ]
-                },
-                {
-                    "id": "benefitMobile-v2",
-                    "title": "电话号码",
-                    "tips": "请输入受益人手机号码",
-                    "description": "受益人手机号码",
-                    "visible": true,
-                    "type": "string",
-                    "returned": true
-                },
-                {
-                    "id": "benefitContactAddress-v2",
-                    "title": "联系地址",
-                    "tips": "请详细填写至门牌号",
-                    "description": "受益人联系地址",
-                    "visible": true,
-                    "returned": true,
-                    "type": "",
-                    "customized": false,
-                    "placeholder": "示例：光明路99号3单元301室",
-                    "default_value": ""
-                },
-                {
-                    "id": "benefitProfessionId-v2",
-                    "title": "职业类别",
-                    "tips": "请选择",
-                    "description": "受益人职业类别",
-                    "visible": true,
-                    "type": "string",
-                    "returned": true
-                },
-                {
-                    "id": "benefitScale-v2",
-                    "title": "受益比例",
-                    "tips": "所有受益人受益比例合计需为100",
-                    "description": "受益人受益比例",
-                    "visible": true,
-                    "type": "string",
-                    "returned": true
-                }
-            ],
-            "id": "benefitInfoWidget-v2",
-            "title": "受益人信息"
-        },
-        {
-            "id": "inputsFooterWidget-v2",
-            "title": "页脚微件",
-            "components": [
-                {
-                    "id": "reminder-v2",
-                    "check": false,
-                    "title": "温馨提示",
-                    "tips": "长生人寿保险有限公司",
-                    "content": "",
-                    "type": "string",
-                    "visible": true,
                     "returned": false,
-                    "options": [
+                    "insuredRuleDate": "1",
+                    "url": ""
+                }
+            ],
+            "id": "basicWidget-v2",
+            "title": "基本信息微件-v2"
+        },
+        {
+            "components": [
+                {
+                    "description": "理赔服务",
+                    "id": "claimServiceUrl-v2",
+                    "title": "理赔服务",
+                    "value": ""
+                },
+                {
+                    "lpxz": "出险后服务专员将全程提供协助，享保险公司专属绿色通道，贴心100分。",
+                    "dzbd": "投保成功后，电子保单直接发送至您的邮箱，舒心100分。",
+                    "id": "companyProfile-v2",
+                    "title": "公司简介",
+                    "value": "爱心人寿保险股份有限公司，是经中国保监会批准成立的全国性、综合性人寿保险公司。是由北京保险产业园投资控股有限责任公司等十一家优质企业发起设立，注册资金17亿元，注册地北京。<br>\n爱心人寿的企业愿景是“成为国际领先的，专注服务于家庭的综合金融保险服务集团，并致力于爱心慈善文化的全球传播”。爱心人寿的企业使命是“集聚爱心帮助更需要帮助的人”。<br>\n我们以客户为中心，以场景化需求为导向，为家庭客户提供涉及“保险保障、医养健康、财富管理、安全防范和慈善帮助”五大关爱，实现家庭更安全、更健康和更幸福。<br>\n爱心人寿以互联网大数据、人工智能区块链及云平台技术为底层支持体系，构建“保险＋医疗”、“保险+科技”的新型公司商业模式；以“专业化、轻资产、科技型”经营理念为指引，构筑公司核心竞争能力；以“专注服务于家庭”为核心定位，实现“让每一个家庭因为爱心而更加安全、健康和美好”；以爱心慈善公益为社会责任，为更多自闭症儿童和家庭提供慈善援助。<br>\n爱心，让家庭更美好！<br><br>\n客服热线：10109520<br>\n官网：<a href=\"http://www.aixin-ins.com/\">http://www.aixin-ins.com/</a>",
+                    "bdyz": "该保单支持保险公司官网验证，放心100分。"
+                },
+                {
+                    "description": "常见问题",
+                    "id": "FAQUrl-v2",
+                    "title": "常见问题",
+                    "value": ""
+                },
+                {
+                    "description": "投保须知",
+                    "id": "insuranceInstructionUrl-v2",
+                    "title": "投保须知",
+                    "value": "",
+                    "option": [
                         {
-                            "label": "投保须知",
-                            "value": "javascript:;"
-                        },
-                        {
-                            "label": "产品条款",
-                            "value": "./1001.pdf"
-                        }
-                    ],
-                    "terms": [
-                        {
-                            "label": "条款",
-                            "value": "javascript:;"
-                        },
-                        {
-                            "label": "产品条款",
-                            "value": "./1001.pdf"
+                            "label": "",
+                            "value": ""
                         }
                     ]
+                },
+                {
+                    "visible": true,
+                    "description": "产品特色",
+                    "id": "productCharacterizeUrl-v2",
+                    "title": "产品特色",
+                    "returned": false,
+                    "url": ""
                 }
-            ]
+            ],
+            "id": "productContentWidget-v2",
+            "title": "产品特色微件-v2"
+        },
+        {
+            "components": [
+                {
+                    "visible": false,
+                    "description": "为您推荐爱心守护神2.0增额终身寿险，详情请点击！",
+                    "id": "weixinShare-v2",
+                    "title": "免体检，免契调，航空意外额外赔，可选投保人豁免！",
+                    "returned": false,
+                    "url": "https://shop.zhongbaounion.com/pic/wechatShare/1087163914752942080.jpg"
+                }
+            ],
+            "id": "weixinShareWidget-v2",
+            "title": "微信分享微件-v2"
+        },
+        {
+            "components": [
+                {
+                    "visible": false,
+                    "description": "组合方案编号",
+                    "id": "portfolioSkuId-v2",
+                    "title": "组合方案编号",
+                    "type": "string",
+                    "returned": true,
+                    "value": "1369884063210790912"
+                },
+                {
+                    "options": [
+                        {
+                            "default": "",
+                            "dutyList": [
+                                {
+                                    "dutyPremium": "",
+                                    "dutyAmountDesc": "",
+                                    "description": "",
+                                    "dutyId": "",
+                                    "dutyAmount": "",
+                                    "dutyName": ""
+                                }
+                            ],
+                            "label": "计划一",
+                            "value": ""
+                        }
+                    ],
+                    "id": "skuList-v2",
+                    "title": "责任列表组件",
+                    "type": "object",
+                    "returned": true
+                }
+            ],
+            "id": "calculatorWidget-v2",
+            "title": "保费测算微件-v2"
+        },
+        {
+            "components": [
+                {
+                    "premium": [
+                        {
+                            "label": "计划一",
+                            "value": "1000.00"
+                        }
+                    ],
+                    "id": "footer_calculator-v2",
+                    "title": "保费测算"
+                },
+                {
+                    "default": "1000",
+                    "visible": true,
+                    "description": "立即投保按钮",
+                    "id": "insureButton-v2",
+                    "title": "立即投保",
+                    "type": "string",
+                    "returned": false
+                }
+            ],
+            "id": "detailsFooterWidget-v2",
+            "title": "页尾微件-v2"
         }
     ]
 }
