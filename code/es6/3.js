@@ -24,7 +24,7 @@ function it1() {
     for (var v of obj) {
         console.log('v1=', v)
     }
-    for (var v of obj) {
+    for (var v of obj) {    
         console.log('v2=', v)
     }
 }
