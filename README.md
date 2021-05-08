@@ -1,24 +1,4 @@
-# vue2-interview
-
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+页面组件化
+- 1.组件联动采用观察者模式
+- 2.规则校验采用命令模式
+- 3.支持可视化配置
