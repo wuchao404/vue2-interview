@@ -13,6 +13,7 @@
 
 <script>
 import computed from './Computed.vue'
+import {test} from '../biz/test.ts'
 export default {
   components:{
     computed,
@@ -31,6 +32,7 @@ export default {
   },
   methods:{
     changetitleName(){
+      test()
       this.titleName = '改标题'+ Date.now()
       console.log('titleName=',this.titleName)
       console.log('this.$el.titleName=',this.$el.titleName)

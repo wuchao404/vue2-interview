@@ -1,0 +1,30 @@
+[
+    {
+        "format": "select",
+        "options": [
+            {
+                "label": "身份证",
+                "value": "1"
+            }
+        ],
+        "description": "投保人证件类型 ",
+        "id": "holderCardType",
+        "title": "证件类型",
+        "type": "string ",
+        "tips": "请选择"
+    },
+    {
+        "isCalculator": true,
+        "visible": true,
+        "waitDays": "0",
+        "description": "投保人证件号码",
+        "maximum": "Y90",
+        "rule": "0",
+        "id": "holderCardNo-v2",
+        "title": "证件号码",
+        "type": "string",
+        "returned": true,
+        "minimum": "Y18",
+        "tips": "请输入投保人证件号码"
+    }
+]
